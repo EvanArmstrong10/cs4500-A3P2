@@ -3,6 +3,7 @@
 #pragma once
 #include "object.h"
 #include "string.h"
+#include "data.h"
 
 
 // TODO: implement get(), potentially implement more methods
@@ -37,6 +38,18 @@ class Column: public Object {
             
         }
 
+        /* Generic get method, only called if dynamic dispatch doesn't work, returns null */
+        virtual Data* get(char* s) {
+            return nullptr;
+        }
+
+        /* Generic get method, only called if dynamic dispatch doesn't work, returns null */
+        virtual Data* get(int x) {
+            return nullptr;
+        }
+
+
+
         
 
 };
@@ -69,6 +82,16 @@ class BoolColumn: public Column {
         bool equals(Object* o) {
             
         }
+
+        /* Inherited from Column, returns the bool Data type at the given row name */
+        Data* get(char* s) {
+            return ;
+        }
+
+        /* Inherited from Column, returns the bool Data type at the given row index */
+        Data* get(int x) {
+            return ;
+        }
 };
 
 class IntColumn: public Column {
@@ -98,6 +121,16 @@ class IntColumn: public Column {
         /* Inherited from Column, checks equality between this IntColumn and the given Object */
         bool equals(Object* o) {
             
+        }
+
+        /* Inherited from Column, returns the int Data type at the given row name */
+        Data* get(char* s) {
+            return ;
+        }
+
+        /* Inherited from Column, returns the int Data type at the given row index */
+        Data* get(int x) {
+            return ;
         }
 };
 
@@ -129,6 +162,16 @@ class FloatColumn: public Column {
         bool equals(Object* o) {
             
         }
+
+        /* Inherited from Column, returns the float Data type at the given row name */
+        Data* get(char* s) {
+            return ;
+        }
+
+        /* Inherited from Column, returns the float Data typeat the given row index */
+        Data* get(int x) {
+            return ;
+        }
 };
 
 
@@ -159,5 +202,15 @@ class StringColumn: public Column {
         /* Inherited from Column, checks equality between this StringColumn and the given Object */
         bool equals(Object* o) {
             
+        }
+
+        /* Inherited from Column, returns the String Data type at the given row name */
+        Data* get(char* s) {
+            return ;
+        }
+
+        /* Inherited from Column, returns the String Data type at the given row index */
+        Data* get(int x) {
+            return ;
         }
 };
