@@ -4,6 +4,10 @@
 #include "object.h"
 #include "string.h"
 
+
+// TODO: implement get(), potentially implement more methods
+
+
 class Column: public Object {
 
     public:
@@ -17,8 +21,6 @@ class Column: public Object {
         ~Column() {
 
         }
-
-        // TODO: implement get
 
         /* Inherited from Object, prints this Column */
         virtual void print() {

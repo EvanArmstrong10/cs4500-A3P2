@@ -6,15 +6,18 @@
 #include "string.h"
 #include <stdlib.h>
 
+
+// TODO: implement get(), write README, potentially add more methods
+
+
 class DataFrame: public Object {
 
     public:
 
+        /* Default Column constructor */
         DataFrame() {
 
         }
-
-        // TODO: implement get, write README
 
         /* Inherited from Object, prints this DataFrame */
         void print() {
