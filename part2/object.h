@@ -19,11 +19,9 @@ class Object {
 
         /* Checks equality between this Object and a given Object */
         virtual bool equals(Object* const o) {
-            return false;
         }
 
         /* Prints out this Object */
         virtual void print() {
-            return;
         }
 };

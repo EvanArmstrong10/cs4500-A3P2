@@ -38,14 +38,12 @@ class Column: public Object {
             
         }
 
-        /* Generic get method, only called if dynamic dispatch doesn't work, returns null */
+        /* Base get method, only called if dynamic dispatch doesn't work, returns null */
         virtual Data* get(char* s) {
-            return nullptr;
         }
 
-        /* Generic get method, only called if dynamic dispatch doesn't work, returns null */
+        /* Base get method, only called if dynamic dispatch doesn't work, returns null */
         virtual Data* get(int x) {
-            return nullptr;
         }
 
 
@@ -85,12 +83,10 @@ class BoolColumn: public Column {
 
         /* Inherited from Column, returns the bool Data type at the given row name */
         Data* get(char* s) {
-            return ;
         }
 
         /* Inherited from Column, returns the bool Data type at the given row index */
         Data* get(int x) {
-            return ;
         }
 };
 
@@ -110,12 +106,10 @@ class IntColumn: public Column {
 
         /* Inherited from Column, prints this IntColumn */
         void print() {
-            return;
         }
 
         /* Inherited from Column, returns size of this IntColumn */
         size_t size() {
-            return 0;
         }
 
         /* Inherited from Column, checks equality between this IntColumn and the given Object */
@@ -125,12 +119,10 @@ class IntColumn: public Column {
 
         /* Inherited from Column, returns the int Data type at the given row name */
         Data* get(char* s) {
-            return ;
         }
 
         /* Inherited from Column, returns the int Data type at the given row index */
         Data* get(int x) {
-            return ;
         }
 };
 
@@ -150,12 +142,10 @@ class FloatColumn: public Column {
 
         /* Inherited from Column, prints this FloatColumn */
         void print() {
-            return;
         }
 
         /* Inherited from Column, returns size of this FloatColumn */
         size_t size() {
-            return 0;
         }
 
         /* Inherited from Column, checks equality between this FloatColumn and the given Object */
@@ -165,12 +155,10 @@ class FloatColumn: public Column {
 
         /* Inherited from Column, returns the float Data type at the given row name */
         Data* get(char* s) {
-            return ;
         }
 
         /* Inherited from Column, returns the float Data typeat the given row index */
         Data* get(int x) {
-            return ;
         }
 };
 

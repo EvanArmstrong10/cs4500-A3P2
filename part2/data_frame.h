@@ -22,47 +22,38 @@ class DataFrame: public Object {
 
         /* Inherited from Object, prints this DataFrame */
         void print() {
-            return;
         }
 
         /* Returns the number of rows in this DataFrame*/
         int nrow() {
-            return 0;
         }
 
         /* Returns the number of columns in this DataFrame*/
         int ncol() {
-            return 0;
         }
 
         /* Inserts given column into this DataFrame*/
         void insert(Column* col) {
-            return;
         }
 
         /* Returns a list of the labels of the columns (header) in this DataFrame */
         char** columns() {
-            return ;
         }
 
         /* Changes the label at the given Column index to the given char* */
         void col_rename(size_t i, char* s) {
-            return;
         }
 
         /* Changes the label of the row at the given index to the given char* */
         void row_rename(size_t i, char* s) {
-            return;
         }
 
         /* Removes the Column at the given header from this Dataframe*/
         void cdel(char* h) {
-            return;
         }
 
         /* Removes the row at the given index */
         void rdel(size_t i) {
-            return;
         }
 
         /* Returns the bool at the given indices */

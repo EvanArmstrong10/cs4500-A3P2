@@ -19,17 +19,14 @@ class String: public Object {
 
         /* Inherited from Object, checks equality between a String and an Object */
         bool equals(Object* const o) {
-            return false;
         }
 
         /* Inherited from Object, prints this string */
         void print() {
-            return;
         }
 
         /* Returns the current length of the String */
          size_t size() {
-            return 0;
         }
 
         /** Compares strings based on alphabetical order
@@ -38,17 +35,14 @@ class String: public Object {
         * > 0 -> this String is greater than String s
         */
        int cmp(String* s) {
-           return 0;
        }
 
        /* Creates a new String by combining two existing Strings */
        String* concat(String* s) {
-           return;
        }
 
        /* Removes leading and trailing whitespaces from this String */
        void trim() {
-           return;
        }
 
 
