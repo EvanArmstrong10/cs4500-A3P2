@@ -46,5 +46,10 @@ class String: public Object {
            return;
        }
 
+       /* Removes leading and trailing whitespaces from this String */
+       void trim() {
+           return;
+       }
+
 
 };

@@ -26,7 +26,7 @@ class Column: public Object {
         }
 
         /* Returns size of this Column */
-        virtual int size() {
+        virtual size_t size() {
             return 0;
         }
 
@@ -59,7 +59,7 @@ class BoolColumn: public Column {
         }
 
         /* Inherited from Column, Returns size of this BoolColumn */
-        int size() {
+        size_t size() {
             return 0;
         }
 
@@ -89,7 +89,7 @@ class IntColumn: public Column {
         }
 
         /* Inherited from Column, returns size of this IntColumn */
-        int size() {
+        size_t size() {
             return 0;
         }
 
@@ -119,7 +119,7 @@ class FloatColumn: public Column {
         }
 
         /* Inherited from Column, returns size of this FloatColumn */
-        int size() {
+        size_t size() {
             return 0;
         }
 
@@ -150,7 +150,7 @@ class StringColumn: public Column {
         }
 
         /* Inherited from Column, returns size of this StringColumn */
-        int size() {
+        size_t size() {
             return 0;
         }
 
