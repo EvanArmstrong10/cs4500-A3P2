@@ -58,7 +58,7 @@ class DataFrame: public Object {
 
         /* Removes the given Column from this DataFrame and returns it*/
         Column* pop(Column* col) {
-            return ;
+            return;
         }
 
         //or
